@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAES Commerce - Iniciar Sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Librería de iconos Font Awesome -->
+    <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado superior azul -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo-box">
+                <i class="fa-solid fa-box-open"></i>
+            </div>
+            <div class="logo-text">
+                <h1>SAES</h1>
+                <h2>COMMERCE</h2>
+            </div>
+        </div>
+        <p class="subtitle">Sistema de gestión de pedidos SAES Empaque y Embalaje</p>
+    </header>
+
+    <!-- Contenedor del Formulario -->
+    <main class="login-container">
+        <div class="avatar-icon">
+            <i class="fa-solid fa-user-tie"></i>
+        </div>
+        
+        <h3>Iniciar sesión</h3>
+
+        <form class="login-form">
+            <!-- Campo Usuario -->
+            <div class="input-group">
+                <label for="usuario">Usuario</label>
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="text" id="usuario" placeholder="Ingrese su usuario" required>
+                </div>
+            </div>
+
+            <!-- Campo Contraseña -->
+            <div class="input-group">
+                <label for="contrasena">Contraseña</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-shield-halved input-icon"></i>
+                    <!-- Añadimos un id al input para manipularlo con JS -->
+                    <input type="password" id="contrasena" placeholder="Ingrese su contraseña" required>
+                    <!-- Añadimos un id al icono del ojo para el evento click -->
+                    <i class="fa-regular fa-eye toggle-password" id="btn-toggle-password" style="cursor: pointer;"></i>
+                </div>
+            </div>
+
+            <!-- Opciones adicionales (Recordar / Olvidó) -->
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" id="recordar"> Recordar sesión
+                </label>
+                <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+            </div>
+
+            <!-- Botón de Envío -->
+            <button type="submit" class="btn-submit">Iniciar sesión</button>
+        </form>
+    </main>
+
+    <!-- Enlace al archivo de JavaScript (Colócalo antes de cerrar el body) -->
+    <script src="script.js"></script>
+    </main>
+
+</body>
+</html>
