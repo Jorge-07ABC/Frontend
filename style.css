@@ -197,6 +197,26 @@ input:active {
     text-decoration: underline;
 }
 
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-footer p {
+    color: #555; /* Color del texto secundario */
+}
+
+.create-account-link {
+    color: #0056b3; /* Cambia esto por el azul exacto de tu header */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.create-account-link:hover {
+    text-decoration: underline;
+}
+
 /* Botón Iniciar Sesión */
 .btn-submit {
     width: 100%;
